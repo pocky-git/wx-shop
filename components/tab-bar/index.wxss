@@ -1,0 +1,19 @@
+.tab-bar .tab-nav {
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+.tab-bar .tab-nav .item {
+  flex: 1;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5rpx solid transparent;
+  font-size: 28rpx;
+  color: #666;
+}
+.tab-bar .tab-nav .item.active {
+  border-color: var(--themeColor);
+  color: #000;
+  font-weight: bold;
+}

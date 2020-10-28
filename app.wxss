@@ -1,0 +1,21 @@
+@import "./assets/css/icon.wxss"
+
+view,
+page,
+image,
+swiper,
+swiper-item,
+text,
+navigator {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+page {
+    --themeColor: #eb4450;
+}
+
+image{
+    width: 100%;
+}

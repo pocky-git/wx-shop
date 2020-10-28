@@ -1,0 +1,5 @@
+<view class="search-bar">
+    <navigator url="/pages/search/search" class="search-link">
+        搜索
+    </navigator>
+</view>

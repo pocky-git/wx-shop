@@ -1,0 +1,108 @@
+.detail-container {
+  background: #eee;
+  padding-bottom: 90rpx;
+}
+.detail-container .goods-img {
+  height: 40vh;
+  background: #fff;
+}
+.detail-container .goods-img swiper-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail-container .goods-img swiper-item image {
+  width: 60%;
+}
+.detail-container .goods-info {
+  font-size: 28rpx;
+  background: #fff;
+  margin-bottom: 10rpx;
+}
+.detail-container .goods-info .goods-price {
+  color: var(--themeColor);
+  font-weight: bold;
+  padding: 0 20rpx 10rpx;
+}
+.detail-container .goods-info .goods-row {
+  display: flex;
+}
+.detail-container .goods-info .goods-row .goods-name {
+  flex: 4;
+  padding: 0 20rpx;
+}
+.detail-container .goods-info .goods-row .goods-collect {
+  flex: 1;
+  border-left: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx 0;
+}
+.detail-container .goods-info .goods-row .goods-collect .collect-btn {
+  text-align: center;
+}
+.detail-container .goods-info .goods-row .goods-collect .collect-btn .iconfont {
+  font-size: 44rpx;
+  margin-bottom: 5rpx;
+}
+.detail-container .goods-info .goods-row .goods-collect .collect-btn .icon-shoucang1 {
+  color: orangered;
+}
+.detail-container .goods-detail .detail-title {
+  background: #fff;
+  font-size: 36rpx;
+  padding: 10rpx 20rpx;
+  color: var(--themeColor);
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+.detail-container .btm_tool {
+  border-top: 1rpx solid #ccc;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: #fff;
+  display: flex;
+}
+.detail-container .btm_tool .tool_item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  position: relative;
+}
+.detail-container .btm_tool .tool_item button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.detail-container .btm_tool .btn_cart {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffa500;
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.detail-container .btm_tool .btn_buy {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eb4450;
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: 600;
+}

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "searchBar":"../../components/search-bar",
+    "tabBar":"../../components/tab-bar"
+  },
+  "enablePullDownRefresh":true,
+  "backgroundTextStyle":"dark"
+}

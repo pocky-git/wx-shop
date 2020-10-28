@@ -1,0 +1,21 @@
+.tab-bar{
+    .tab-nav{
+        display: flex;
+        border-bottom: 1px solid #eee;
+        .item{
+            flex: 1;
+            height: 80rpx;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 5rpx solid transparent;
+            font-size: 28rpx;
+            color: #666;
+            &.active{
+                border-color: var(--themeColor);
+                color: #000;
+                font-weight: bold;
+            }
+        }
+    }
+}

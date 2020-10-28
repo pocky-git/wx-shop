@@ -1,0 +1,26 @@
+<view class="index-container">
+    <searchBar />
+    <swiper class="index-banner" indicator-dots autoplay circular>
+        <swiper-item class="banner-item" wx:for="{{swiperList}}" wx:key="index">
+            <navigator url="/pages/goods_detail/goodsDetails?goods_id={{item.goods_id}}"><image class="banner-img" src="{{item.image_src}}" mode="widthFix"></image></navigator>
+        </swiper-item>
+    </swiper>
+    <view class="index-cate">
+        <navigator class="cate-item" wx:for="{{cateList}}" wx:key="index">
+            <image src="{{item.image_src}}" mode="widthFix"></image>
+        </navigator>
+    </view>
+    <view class="index-floor">
+        <view class="floor-item" wx:for="{{floorList}}" wx:key="index">
+            <view class="floor-title">
+                <image src="{{item.floor_title.image_src}}" mode="widthFix"></image>
+            </view>
+            <view class="floor-content">
+                <navigator>
+                    <image wx:for="{{item.product_list}}" wx:key="index" src="{{item.image_src}}"
+                        mode="{{index===0?'widthFix':'scaleToFill'}}"></image>
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>

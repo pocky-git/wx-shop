@@ -1,0 +1,25 @@
+<view class="goods-container">
+    <searchBar/>
+    <tabBar tabs="{{tabs}}" bind:tabChange="handleTabChange">
+        <view class="goods-list">
+            <navigator 
+                class="goods-item" 
+                wx:for="{{goods}}" 
+                wx:key="goods_id"
+                url="/pages/goods_detail/goodsDetails?goods_id={{item.goods_id}}"
+            >
+                <view class="goods-img">
+                    <image src="{{item.goods_small_logo?item.goods_small_logo:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}" mode="widthFix"></image>
+                </view>
+                <view class="goods-info">
+                    <view class="goods-name">
+                        {{item.goods_name}}
+                    </view>
+                    <view class="goods-price">
+                        ￥{{item.goods_price}}
+                    </view>
+                </view>
+            </navigator>
+        </view>
+    </tabBar>
+</view>

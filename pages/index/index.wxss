@@ -1,0 +1,33 @@
+.index-container .index-banner {
+  height: 340rpx;
+}
+.index-container .index-cate {
+  display: flex;
+  padding: 25rpx 0;
+}
+.index-container .index-cate .cate-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.index-container .index-cate .cate-item image {
+  width: 140rpx;
+}
+.index-container .index-floor .floor-item .floor-title {
+  padding: 30rpx 0 20rpx;
+}
+.index-container .index-floor .floor-item .floor-content {
+  overflow: hidden;
+}
+.index-container .index-floor .floor-item .floor-content image {
+  float: left;
+  width: 33.33%;
+}
+.index-container .index-floor .floor-item .floor-content image:not(:first-of-type) {
+  height: 27.72711207vw;
+  border-left: 10rpx solid #fff;
+}
+.index-container .index-floor .floor-item .floor-content image:nth-of-type(2),
+.index-container .index-floor .floor-item .floor-content image:nth-of-type(3) {
+  border-bottom: 10rpx solid #fff;
+}

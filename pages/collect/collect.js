@@ -1,0 +1,50 @@
+Page({
+  data: {
+    tabs:[
+      {
+        id:0,
+        text:'商品收藏',
+        isActive:true
+      },
+      {
+        id:1,
+        text:'品牌收藏',
+        isActive:false
+      },
+      {
+        id:2,
+        text:'店铺收藏',
+        isActive:false
+      },
+      {
+        id:3,
+        text:'浏览足迹',
+        isActive:false
+      }
+    ],
+    collect:[]
+  },
+  onShow(){
+    this.getCollect()
+  },
+  handleTabChange(e){
+    const index = e.detail
+    const {tabs} = this.data
+    tabs.forEach(item=>{
+      if(item.id===index){
+        item.isActive=true
+      }else{
+        item.isActive=false
+      }
+    })
+    this.setData({
+      tabs
+    })
+  },
+  getCollect(){
+    const collect = wx.getStorageSync('collect')
+    this.setData({
+      collect
+    })
+  }
+})

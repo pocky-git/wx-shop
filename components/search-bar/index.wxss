@@ -1,0 +1,14 @@
+.search-bar {
+  padding: 10rpx;
+  background: var(--themeColor);
+}
+.search-bar .search-link {
+  background: #fff;
+  border-radius: 10rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  color: #333;
+}

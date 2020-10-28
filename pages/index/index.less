@@ -1,0 +1,39 @@
+.index-container {
+    .index-banner {
+        height: 340rpx;
+    }
+    .index-cate{
+        display: flex;
+        padding: 25rpx 0;
+        .cate-item{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            image{
+                width: 140rpx;
+            }
+        }
+    }
+    .index-floor{
+        .floor-item{
+            .floor-title{
+                padding: 30rpx 0 20rpx;
+            }
+            .floor-content{
+                overflow: hidden;
+                image{
+                    float: left;
+                    width: 33.33%;
+                    &:not(:first-of-type){
+                        height:386rpx * 33.33vw / 232rpx /2;
+                        border-left: 10rpx solid #fff;
+                    }
+                    &:nth-of-type(2),
+                    &:nth-of-type(3){
+                        border-bottom: 10rpx solid #fff;
+                    }
+                }
+            }
+        }
+    }
+}
